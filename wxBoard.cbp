@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="wxBoard" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc-mingw64" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/wxBoard" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="0" />
+				<Option compiler="gcc-mingw64" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-D__WXDEBUG__" />
+					<Add directory="D:/Downloads/wxWidgets-3.2.6/lib/gcc_dll/mswud" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="D:/Downloads/wxWidgets-3.2.6/lib/gcc_dll/mswud" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="libwxmsw32ud.a" />
+					<Add directory="D:/Downloads/wxWidgets-3.2.6/lib/gcc_dll" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/wxBoard" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc-mingw64" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add directory="D:/Downloads/wxWidgets-3.2.6/lib/gcc_dll/mswu" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="D:/Downloads/wxWidgets-3.2.6/lib/gcc_dll/mswu" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="libwxmsw32u.a" />
+					<Add directory="D:/Downloads/wxWidgets-3.2.6/lib/gcc_dll" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-pipe" />
+			<Add option="-mthreads" />
+			<Add option="-D__GNUWIN32__" />
+			<Add option="-D__WXMSW__" />
+			<Add option="-DWXUSINGDLL" />
+			<Add option="-DwxUSE_UNICODE" />
+			<Add directory="D:/Downloads/wxWidgets-3.2.6/include" />
+		</Compiler>
+		<ResourceCompiler>
+			<Add directory="D:/Downloads/wxWidgets-3.2.6/include" />
+		</ResourceCompiler>
+		<Linker>
+			<Add option="-mthreads" />
+		</Linker>
+		<Unit filename="Board.cpp" />
+		<Unit filename="Board.h" />
+		<Unit filename="ChessBoard.cpp" />
+		<Unit filename="ChessBoard.h" />
+		<Unit filename="ChessPiece.cpp" />
+		<Unit filename="ChessPiece.h" />
+		<Unit filename="ChuShogiBoard.cpp" />
+		<Unit filename="ChuShogiBoard.h" />
+		<Unit filename="ChuShogiPiece.cpp" />
+		<Unit filename="ChuShogiPiece.h" />
+		<Unit filename="Common.h" />
+		<Unit filename="DaiDaiShogiBoard.cpp" />
+		<Unit filename="DaiDaiShogiBoard.h" />
+		<Unit filename="DaiDaiShogiPiece.cpp" />
+		<Unit filename="DaiDaiShogiPiece.h" />
+		<Unit filename="DaiShogiBoard.cpp" />
+		<Unit filename="DaiShogiBoard.h" />
+		<Unit filename="DaiShogiPiece.cpp" />
+		<Unit filename="DaiShogiPiece.h" />
+		<Unit filename="Engine.cpp" />
+		<Unit filename="Engine.h" />
+		<Unit filename="JudkinShogiBoard.cpp" />
+		<Unit filename="JudkinShogiBoard.h" />
+		<Unit filename="KanjiPiece.cpp" />
+		<Unit filename="KanjiPiece.h" />
+		<Unit filename="KoShogiBoard.cpp" />
+		<Unit filename="KoShogiBoard.h" />
+		<Unit filename="KoShogiPiece.cpp" />
+		<Unit filename="KoShogiPiece.h" />
+		<Unit filename="MakaDaiDaiShogiBoard.cpp" />
+		<Unit filename="MakaDaiDaiShogiBoard.h" />
+		<Unit filename="MakaDaiDaiShogiPiece.cpp" />
+		<Unit filename="MakaDaiDaiShogiPiece.h" />
+		<Unit filename="MakrukBoard.cpp" />
+		<Unit filename="MakrukBoard.h" />
+		<Unit filename="MakrukPiece.cpp" />
+		<Unit filename="MakrukPiece.h" />
+		<Unit filename="MiniShogiBoard.cpp" />
+		<Unit filename="MiniShogiBoard.h" />
+		<Unit filename="Piece.cpp" />
+		<Unit filename="Piece.h" />
+		<Unit filename="QianhongEngine.cpp" />
+		<Unit filename="QianhongEngine.h" />
+		<Unit filename="ShatranjBoard.cpp" />
+		<Unit filename="ShatranjBoard.h" />
+		<Unit filename="ShatranjPiece.cpp" />
+		<Unit filename="ShatranjPiece.h" />
+		<Unit filename="ShogiBoard.cpp" />
+		<Unit filename="ShogiBoard.h" />
+		<Unit filename="ShogiPiece.cpp" />
+		<Unit filename="ShogiPiece.h" />
+		<Unit filename="ShogiVariantBoard.cpp" />
+		<Unit filename="ShogiVariantBoard.h" />
+		<Unit filename="TenjikuShogiBoard.cpp" />
+		<Unit filename="TenjikuShogiBoard.h" />
+		<Unit filename="TenjikuShogiPiece.cpp" />
+		<Unit filename="TenjikuShogiPiece.h" />
+		<Unit filename="UcciEngine.cpp" />
+		<Unit filename="UcciEngine.h" />
+		<Unit filename="UciEngine.cpp" />
+		<Unit filename="UciEngine.h" />
+		<Unit filename="UsiEngine.cpp" />
+		<Unit filename="UsiEngine.h" />
+		<Unit filename="WaShogiBoard.cpp" />
+		<Unit filename="WaShogiBoard.h" />
+		<Unit filename="WaShogiPiece.cpp" />
+		<Unit filename="WaShogiPiece.h" />
+		<Unit filename="WbEngine.cpp" />
+		<Unit filename="WbEngine.h" />
+		<Unit filename="XiangqiBoard.cpp" />
+		<Unit filename="XiangqiBoard.h" />
+		<Unit filename="XiangqiPiece.cpp" />
+		<Unit filename="XiangqiPiece.h" />
+		<Unit filename="resource.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="wxBoardApp.cpp" />
+		<Unit filename="wxBoardApp.h" />
+		<Unit filename="wxBoardMain.cpp" />
+		<Unit filename="wxBoardMain.h" />
+		<Unit filename="wxsmith/wxBoarddialog.wxs" />
+		<Extensions>
+			<wxsmith version="1">
+				<gui name="wxWidgets" src="wxBoardApp.cpp" main="wxBoardDialog" init_handlers="necessary" language="CPP" />
+				<resources>
+					<wxDialog wxs="wxsmith/wxBoarddialog.wxs" src="wxBoardMain.cpp" hdr="wxBoardMain.h" fwddecl="0" i18n="1" name="wxBoardDialog" language="CPP" />
+				</resources>
+			</wxsmith>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
