@@ -36,8 +36,8 @@ void Engine::Quit() const
 	{
         if (_process->IsRedirected())
         {
-            //*_process->GetOutputStream() << "quit\n";
-            //_process->GetOutputStream()->Flush();
+            const char *str = "quit\n";
+            _process->GetOutputStream()->Write(str, strlen(str));
         }
          wxKill(_process->GetPid(), wxSIGKILL, nullptr, wxKILL_CHILDREN);
         _process.reset();
@@ -90,8 +90,7 @@ void Engine::WriteToProcess(wxString buf) const
         _textEdit->AppendText("\n");
     }
 
-    //*_process->GetOutputStream() << buf << "\n";
-    //_process->GetOutputStream()->Flush();
+    _process->GetOutputStream()->Write(buf.c_str(), buf.size());
 }
 
 std::vector<wxString> Engine::Moves() const

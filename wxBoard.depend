@@ -1944,11 +1944,11 @@
 
 1740605095 source:d:\code\wxboard\xiangqipiece.cpp
 
-1741096661 source:d:\code\wxboard\engine.cpp
+1741109095 source:d:\code\wxboard\engine.cpp
 	"Engine.h"
 	<utility>
 
-1741095484 d:\code\wxboard\engine.h
+1741108679 d:\code\wxboard\engine.h
 	<wx/process.h>
 	<wx/filename.h>
 	<wx/textctrl.h>
@@ -1960,10 +1960,10 @@
 	"wx/stream.h"
 	"wx/utils.h"
 
-1741097544 source:d:\code\wxboard\qianhongengine.cpp
+1741108679 source:d:\code\wxboard\qianhongengine.cpp
 	"QianhongEngine.h"
 
-1741096648 d:\code\wxboard\qianhongengine.h
+1741108679 d:\code\wxboard\qianhongengine.h
 	"Engine.h"
 
 1741097798 source:d:\code\wxboard\ucciengine.cpp
@@ -2122,4 +2122,11 @@
 
 1741098489 d:\code\wxboard\usiengine.h
 	"UciEngine.h"
+
+1741099726 source:d:\code\wxboard\wbengine.cpp
+	"WbEngine.h"
+
+1741097730 d:\code\wxboard\wbengine.h
+	"Engine.h"
+	"Board.h"
 

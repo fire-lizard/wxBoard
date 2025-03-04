@@ -18,5 +18,5 @@ public:
 	wxString AddMove(signed char x1, signed char y1, signed char x2, signed char y2, char promotion = ' ') override;
 };
 
-#endif // header guard 
+#endif // header guard
 
