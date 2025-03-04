@@ -585,6 +585,7 @@ void EngineOutputHandler::ReadStandardError(const wxString& buf, wxTextCtrl* tex
 	textEdit->Clear();
 	textEdit->SetDefaultStyle(wxTextAttr(*wxRED));
     textEdit->AppendText(buf);
+	textEdit->SetDefaultStyle(wxTextAttr(*wxBLACK));
 }
 
 void EngineOutputHandler::AddMove(Board* board, GameVariant gameVariant, PieceType p, int x1, int y1, int x2, int y2, int x3, int y3)
