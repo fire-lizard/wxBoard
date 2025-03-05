@@ -1686,7 +1686,7 @@
 1668879827 source:d:\code\wxboard\resource.rc
 	"wx/msw/wx.rc"
 
-1741089556 source:d:\code\wxboard\wxboardapp.cpp
+1741173361 source:d:\code\wxboard\wxboardapp.cpp
 	"wxBoardApp.h"
 	"wxBoardMain.h"
 	<wx/image.h>
@@ -1694,19 +1694,20 @@
 1741089547 d:\code\wxboard\wxboardapp.h
 	<wx/app.h>
 
-1741143815 d:\code\wxboard\wxboardmain.h
-	<wx/button.h>
+1741175427 d:\code\wxboard\wxboardmain.h
+	<memory>
+	<wx/grid.h>
+	<wx/xml/xml.h>
+	<wx/log.h>
 	<wx/frame.h>
-	<wx/sizer.h>
-	<wx/statline.h>
-	<wx/stattext.h>
+	<wx/menu.h>
+	<wx/statusbr.h>
+	"WbEngine.h"
 
-1741143912 source:d:\code\wxboard\wxboardmain.cpp
+1741173406 source:d:\code\wxboard\wxboardmain.cpp
 	"wxBoardMain.h"
 	<wx/msgdlg.h>
-	<wx/font.h>
 	<wx/intl.h>
-	<wx/settings.h>
 	<wx/string.h>
 
 1741006174 source:d:\code\wxboard\board.cpp
@@ -2210,4 +2211,110 @@
 1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\osx\cocoa\stdpaths.h
 
 1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\unix\stdpaths.h
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\menu.h
+	"wx/defs.h"
+	"wx/list.h"
+	"wx/window.h"
+	"wx/menuitem.h"
+	"wx/univ/menu.h"
+	"wx/msw/menu.h"
+	"wx/motif/menu.h"
+	"wx/gtk/menu.h"
+	"wx/gtk1/menu.h"
+	"wx/osx/menu.h"
+	"wx/qt/menu.h"
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\menuitem.h
+	"wx/defs.h"
+	"wx/object.h"
+	"wx/bmpbndl.h"
+	"wx/windowid.h"
+	"wx/vector.h"
+	"wx/univ/menuitem.h"
+	"wx/msw/menuitem.h"
+	"wx/motif/menuitem.h"
+	"wx/gtk/menuitem.h"
+	"wx/gtk1/menuitem.h"
+	"wx/osx/menuitem.h"
+	"wx/qt/menuitem.h"
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\univ\menuitem.h
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\msw\menuitem.h
+	"wx/ownerdrw.h"
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\ownerdrw.h
+	"wx/defs.h"
+	"wx/font.h"
+	"wx/colour.h"
+	"wx/msw/ownerdrw.h"
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\msw\ownerdrw.h
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\motif\menuitem.h
+	"wx/bitmap.h"
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\gtk\menuitem.h
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\gtk1\menuitem.h
+	"wx/bitmap.h"
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\osx\menuitem.h
+	"wx/defs.h"
+	"wx/vector.h"
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\qt\menuitem.h
+	"wx/menuitem.h"
+	"wx/bitmap.h"
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\univ\menu.h
+	"wx/accel.h"
+	"wx/dynarray.h"
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\msw\menu.h
+	"wx/accel.h"
+	"wx/dynarray.h"
+	"wx/arrstr.h"
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\motif\menu.h
+	"wx/colour.h"
+	"wx/font.h"
+	"wx/arrstr.h"
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\gtk\menu.h
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\gtk1\menu.h
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\osx\menu.h
+	"wx/arrstr.h"
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\qt\menu.h
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\grid.h
+	"wx/generic/grid.h"
+	"wx/generic/grideditors.h"
+	"wx/generic/gridctrl.h"
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\generic\grid.h
+	"wx/defs.h"
+	"wx/hashmap.h"
+	"wx/scrolwin.h"
+	<iterator>
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\generic\grideditors.h
+	"wx/defs.h"
+	"wx/scopedptr.h"
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\generic\gridctrl.h
+	"wx/grid.h"
+	"wx/datetime.h"
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\xml\xml.h
+	"wx/defs.h"
+	"wx/string.h"
+	"wx/object.h"
+	"wx/list.h"
+	"wx/textbuf.h"
+	"wx/versioninfo.h"
 
