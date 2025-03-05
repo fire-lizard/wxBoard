@@ -1694,17 +1694,29 @@
 1741089547 d:\code\wxboard\wxboardapp.h
 	<wx/app.h>
 
-1741183732 d:\code\wxboard\wxboardmain.h
+1741207513 d:\code\wxboard\wxboardmain.h
 	<wx/frame.h>
+	<wx/statusbr.h>
 	<wx/toolbar.h>
 	<memory>
 	<wx/grid.h>
 	<wx/xml/xml.h>
 	<wx/log.h>
 	<wx/msgdlg.h>
+	<wx/filedlg.h>
+	<wx/stdpaths.h>
 	"WbEngine.h"
+	"UcciEngine.h"
+	"QianhongEngine.h"
+	"UsiEngine.h"
+	"ChessBoard.h"
+	"EngineOutputHandler.h"
+	"IniFile.h"
+	"NewGameDialog.h"
+	"EngineManager.h"
+	"SettingsDialog.h"
 
-1741182654 source:d:\code\wxboard\wxboardmain.cpp
+1741206505 source:d:\code\wxboard\wxboardmain.cpp
 	"wxBoardMain.h"
 	<wx/bitmap.h>
 	<wx/image.h>
@@ -2318,4 +2330,252 @@
 	"wx/list.h"
 	"wx/textbuf.h"
 	"wx/versioninfo.h"
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\filedlg.h
+	"wx/defs.h"
+	"wx/dialog.h"
+	"wx/arrstr.h"
+	"wx/generic/filedlgg.h"
+	"wx/msw/filedlg.h"
+	"wx/motif/filedlg.h"
+	"wx/gtk/filedlg.h"
+	"wx/gtk1/filedlg.h"
+	"wx/osx/filedlg.h"
+	"wx/qt/filedlg.h"
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\generic\filedlgg.h
+	"wx/listctrl.h"
+	"wx/datetime.h"
+	"wx/filefn.h"
+	"wx/artprov.h"
+	"wx/filedlg.h"
+	"wx/generic/filectrlg.h"
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\listctrl.h
+	"wx/defs.h"
+	"wx/listbase.h"
+	"wx/msw/listctrl.h"
+	"wx/qt/listctrl.h"
+	"wx/generic/listctrl.h"
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\listbase.h
+	"wx/colour.h"
+	"wx/font.h"
+	"wx/gdicmn.h"
+	"wx/event.h"
+	"wx/control.h"
+	"wx/itemattr.h"
+	"wx/systhemectrl.h"
+	"wx/withimages.h"
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\itemattr.h
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\systhemectrl.h
+	"wx/defs.h"
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\withimages.h
+	"wx/defs.h"
+	"wx/bmpbndl.h"
+	"wx/icon.h"
+	"wx/imaglist.h"
+	"wx/vector.h"
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\msw\listctrl.h
+	"wx/textctrl.h"
+	"wx/dynarray.h"
+	"wx/vector.h"
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\qt\listctrl.h
+	"wx/textctrl.h"
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\generic\listctrl.h
+	"wx/containr.h"
+	"wx/scrolwin.h"
+	"wx/textctrl.h"
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\artprov.h
+	"wx/string.h"
+	"wx/bitmap.h"
+	"wx/icon.h"
+	"wx/iconbndl.h"
+	"wx/bmpbndl.h"
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\generic\filectrlg.h
+	"wx/containr.h"
+	"wx/listctrl.h"
+	"wx/filectrl.h"
+	"wx/filename.h"
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\filectrl.h
+	"wx/defs.h"
+	"wx/string.h"
+	"wx/event.h"
+	"wx/gtk/filectrl.h"
+	"wx/generic/filectrlg.h"
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\gtk\filectrl.h
+	"wx/control.h"
+	"wx/filectrl.h"
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\msw\filedlg.h
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\motif\filedlg.h
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\gtk\filedlg.h
+	"wx/gtk/filectrl.h"
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\gtk1\filedlg.h
+	"wx/generic/filedlgg.h"
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\osx\filedlg.h
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\qt\filedlg.h
+
+1741203798 source:d:\code\wxboard\newgamedialog.cpp
+	"NewGameDialog.h"
+	<wx/intl.h>
+	<wx/string.h>
+
+1741203848 d:\code\wxboard\newgamedialog.h
+	<wx/dialog.h>
+	<wx/combobox.h>
+	<wx/stattext.h>
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\combobox.h
+	"wx/defs.h"
+	"wx/textctrl.h"
+	"wx/ctrlsub.h"
+	"wx/textentry.h"
+	"wx/univ/combobox.h"
+	"wx/msw/combobox.h"
+	"wx/motif/combobox.h"
+	"wx/gtk/combobox.h"
+	"wx/gtk1/combobox.h"
+	"wx/osx/combobox.h"
+	"wx/qt/combobox.h"
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\ctrlsub.h
+	"wx/defs.h"
+	"wx/arrstr.h"
+	"wx/control.h"
+	<vector>
+	"wx/msw/ctrlsub.h"
+	"wx/motif/ctrlsub.h"
+	"wx/qt/ctrlsub.h"
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\msw\ctrlsub.h
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\motif\ctrlsub.h
+	"wx/dynarray.h"
+	"wx/generic/ctrlsub.h"
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\generic\ctrlsub.h
+	"wx/dynarray.h"
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\qt\ctrlsub.h
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\univ\combobox.h
+	"wx/combo.h"
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\combo.h
+	"wx/defs.h"
+	"wx/control.h"
+	"wx/renderer.h"
+	"wx/bmpbndl.h"
+	"wx/textentry.h"
+	"wx/time.h"
+	"wx/msw/combo.h"
+	"wx/generic/combo.h"
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\msw\combo.h
+	"wx/timer.h"
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\timer.h
+	"wx/defs.h"
+	"wx/object.h"
+	"wx/longlong.h"
+	"wx/event.h"
+	"wx/stopwatch.h"
+	"wx/utils.h"
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\stopwatch.h
+	"wx/defs.h"
+	"wx/longlong.h"
+	"wx/time.h"
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\generic\combo.h
+	"wx/containr.h"
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\msw\combobox.h
+	"wx/choice.h"
+	"wx/textentry.h"
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\choice.h
+	"wx/defs.h"
+	"wx/ctrlsub.h"
+	"wx/univ/choice.h"
+	"wx/msw/choice.h"
+	"wx/motif/choice.h"
+	"wx/gtk/choice.h"
+	"wx/gtk1/choice.h"
+	"wx/osx/choice.h"
+	"wx/qt/choice.h"
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\univ\choice.h
+	"wx/combobox.h"
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\msw\choice.h
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\motif\choice.h
+	"wx/clntdata.h"
+	"wx/dynarray.h"
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\gtk\choice.h
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\gtk1\choice.h
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\osx\choice.h
+	"wx/control.h"
+	"wx/dynarray.h"
+	"wx/arrstr.h"
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\qt\choice.h
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\motif\combobox.h
+	"wx/choice.h"
+	"wx/textentry.h"
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\gtk\combobox.h
+	"wx/choice.h"
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\gtk1\combobox.h
+	"wx/defs.h"
+	"wx/object.h"
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\osx\combobox.h
+	"wx/containr.h"
+	"wx/choice.h"
+	"wx/textctrl.h"
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\qt\combobox.h
+	"wx/choice.h"
+
+1741205868 source:d:\code\wxboard\enginemanager.cpp
+	"EngineManager.h"
+	<wx/intl.h>
+	<wx/string.h>
+
+1741205911 d:\code\wxboard\enginemanager.h
+	<wx/dialog.h>
+	<wx/grid.h>
+	"Common.h"
+
+1741207453 source:d:\code\wxboard\settingsdialog.cpp
+	"SettingsDialog.h"
+	<wx/intl.h>
+	<wx/string.h>
+
+1741207434 d:\code\wxboard\settingsdialog.h
+	<wx/dialog.h>
+	<wx/combobox.h>
 

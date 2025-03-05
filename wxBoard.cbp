@@ -78,6 +78,8 @@
 		<Unit filename="DaiShogiPiece.h" />
 		<Unit filename="Engine.cpp" />
 		<Unit filename="Engine.h" />
+		<Unit filename="EngineManager.cpp" />
+		<Unit filename="EngineManager.h" />
 		<Unit filename="EngineOutputHandler.cpp" />
 		<Unit filename="EngineOutputHandler.h" />
 		<Unit filename="IniFile.cpp" />
@@ -102,10 +104,14 @@
 		<Unit filename="MakrukPiece.h" />
 		<Unit filename="MiniShogiBoard.cpp" />
 		<Unit filename="MiniShogiBoard.h" />
+		<Unit filename="NewGameDialog.cpp" />
+		<Unit filename="NewGameDialog.h" />
 		<Unit filename="Piece.cpp" />
 		<Unit filename="Piece.h" />
 		<Unit filename="QianhongEngine.cpp" />
 		<Unit filename="QianhongEngine.h" />
+		<Unit filename="SettingsDialog.cpp" />
+		<Unit filename="SettingsDialog.h" />
 		<Unit filename="ShatranjBoard.cpp" />
 		<Unit filename="ShatranjBoard.h" />
 		<Unit filename="ShatranjPiece.cpp" />
@@ -143,13 +149,19 @@
 		<Unit filename="wxBoardApp.h" />
 		<Unit filename="wxBoardMain.cpp" />
 		<Unit filename="wxBoardMain.h" />
+		<Unit filename="wxsmith/EngineManager.wxs" />
+		<Unit filename="wxsmith/NewGameDialog.wxs" />
+		<Unit filename="wxsmith/SettingsDialog.wxs" />
 		<Unit filename="wxsmith/wxBoardMain.wxs" />
 		<Extensions>
 			<wxsmith version="1">
-				<gui name="wxWidgets" src="wxBoardApp.cpp" main="wxBoardDialog" init_handlers="necessary" language="CPP" />
+				<gui name="wxWidgets" src="wxBoardApp.cpp" main="wxBoardMain" init_handlers="necessary" language="CPP" />
 				<resources>
 					<wxDialog wxs="wxsmith/wxBoarddialog.wxs" src="wxBoardMain.cpp" hdr="wxBoardMain.h" fwddecl="0" i18n="1" name="wxBoardDialog" language="CPP" />
 					<wxFrame wxs="wxsmith/wxBoardMain.wxs" src="wxBoardMain.cpp" hdr="wxBoardMain.h" fwddecl="0" i18n="1" name="wxBoardMain" language="CPP" />
+					<wxDialog wxs="wxsmith/NewGameDialog.wxs" src="NewGameDialog.cpp" hdr="NewGameDialog.h" fwddecl="0" i18n="1" name="NewGameDialog" language="CPP" />
+					<wxDialog wxs="wxsmith/EngineManager.wxs" src="EngineManager.cpp" hdr="EngineManager.h" fwddecl="0" i18n="1" name="EngineManager" language="CPP" />
+					<wxDialog wxs="wxsmith/SettingsDialog.wxs" src="SettingsDialog.cpp" hdr="SettingsDialog.h" fwddecl="0" i18n="1" name="SettingsDialog" language="CPP" />
 				</resources>
 			</wxsmith>
 		</Extensions>

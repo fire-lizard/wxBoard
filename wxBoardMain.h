@@ -3,6 +3,7 @@
 
 //(*Headers(wxBoardMain)
 #include <wx/frame.h>
+#include <wx/statusbr.h>
 #include <wx/toolbar.h>
 //*)
 
@@ -11,7 +12,18 @@
 #include <wx/xml/xml.h>
 #include <wx/log.h>
 #include <wx/msgdlg.h>
+#include <wx/filedlg.h>
+#include <wx/stdpaths.h>
 #include "WbEngine.h"
+#include "UcciEngine.h"
+#include "QianhongEngine.h"
+#include "UsiEngine.h"
+#include "ChessBoard.h"
+#include "EngineOutputHandler.h"
+#include "IniFile.h"
+#include "NewGameDialog.h"
+#include "EngineManager.h"
+#include "SettingsDialog.h"
 
 class wxBoardMain: public wxFrame
 {
@@ -21,6 +33,7 @@ class wxBoardMain: public wxFrame
         virtual ~wxBoardMain();
 
         //(*Declarations(wxBoardMain)
+        wxStatusBar* StatusBar1;
         wxToolBar* ToolBar1;
         wxToolBarToolBase* ToolBarItem10;
         wxToolBarToolBase* ToolBarItem1;
@@ -48,6 +61,7 @@ class wxBoardMain: public wxFrame
         static const wxWindowID ID_TOOLBARITEM9;
         static const wxWindowID ID_TOOLBARITEM10;
         static const wxWindowID ID_TOOLBAR1;
+        static const wxWindowID ID_STATUSBAR1;
         //*)
 
     private:
@@ -66,6 +80,17 @@ class wxBoardMain: public wxFrame
         static void readXmlUsingStream(const wxString& fileName, wxGrid* engineTable);
 
         static void createXmlFromTable(const wxString& fileName, const wxGrid* engineTable);
+
+        void OnNewGame(wxCommandEvent& event);
+        void OnOpen(wxCommandEvent& event);
+        void OnSave(wxCommandEvent& event);
+        void OnStopGame(wxCommandEvent& event);
+        void OnEditorMode(wxCommandEvent& event);
+        void OnClearBoard(wxCommandEvent& event);
+        void OnSettings(wxCommandEvent& event);
+        void OnEngineManager(wxCommandEvent& event);
+        void OnAbout(wxCommandEvent& event);
+        void OnQuit(wxCommandEvent& event);
 
         int _engineMemorySize = 80;
         std::shared_ptr<Engine> _whiteEngine = nullptr;
