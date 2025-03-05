@@ -1694,14 +1694,14 @@
 1741089547 d:\code\wxboard\wxboardapp.h
 	<wx/app.h>
 
-1741089556 d:\code\wxboard\wxboardmain.h
+1741143815 d:\code\wxboard\wxboardmain.h
 	<wx/button.h>
-	<wx/dialog.h>
+	<wx/frame.h>
 	<wx/sizer.h>
 	<wx/statline.h>
 	<wx/stattext.h>
 
-1741089557 source:d:\code\wxboard\wxboardmain.cpp
+1741143912 source:d:\code\wxboard\wxboardmain.cpp
 	"wxBoardMain.h"
 	<wx/msgdlg.h>
 	<wx/font.h>
@@ -2187,4 +2187,27 @@
 	"wx/defs.h"
 	"wx/string.h"
 	"wx/buffer.h"
+
+1741121037 source:d:\code\wxboard\logger.cpp
+	"Logger.h"
+
+1741120905 d:\code\wxboard\logger.h
+	<wx/stdpaths.h>
+	<wx/file.h>
+	<wx/log.h>
+	<wx/datetime.h>
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\stdpaths.h
+	"wx/defs.h"
+	"wx/string.h"
+	"wx/filefn.h"
+	"wx/msw/stdpaths.h"
+	"wx/osx/cocoa/stdpaths.h"
+	"wx/unix/stdpaths.h"
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\msw\stdpaths.h
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\osx\cocoa\stdpaths.h
+
+1725363804 d:\downloads\wxwidgets-3.2.6\include\wx\unix\stdpaths.h
 

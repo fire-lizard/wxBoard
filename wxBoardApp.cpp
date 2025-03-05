@@ -23,10 +23,9 @@ bool wxBoardApp::OnInit()
     wxInitAllImageHandlers();
     if ( wxsOK )
     {
-        wxBoardDialog Dlg(NULL);
-        SetTopWindow(&Dlg);
-        Dlg.ShowModal();
-        wxsOK = false;
+        wxBoardFrame* Frame = new wxBoardFrame(0);
+        Frame->Show();
+        SetTopWindow(Frame);
     }
     //*)
     return wxsOK;

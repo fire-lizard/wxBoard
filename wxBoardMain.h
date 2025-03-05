@@ -1,3 +1,6 @@
+#ifndef HEADER_4EEDF789F72450FD
+#define HEADER_4EEDF789F72450FD
+
 /***************************************************************
  * Name:      wxBoardMain.h
  * Purpose:   Defines Application Frame
@@ -10,45 +13,39 @@
 #ifndef WXBOARDMAIN_H
 #define WXBOARDMAIN_H
 
-//(*Headers(wxBoardDialog)
-#include <wx/button.h>
-#include <wx/dialog.h>
-#include <wx/sizer.h>
-#include <wx/statline.h>
-#include <wx/stattext.h>
+//(*Headers(wxBoardFrame)
+#include <wx/frame.h>
+#include <wx/menu.h>
+#include <wx/statusbr.h>
 //*)
 
-class wxBoardDialog: public wxDialog
+class wxBoardFrame: public wxFrame
 {
     public:
 
-        wxBoardDialog(wxWindow* parent,wxWindowID id = -1);
-        virtual ~wxBoardDialog();
+        wxBoardFrame(wxWindow* parent,wxWindowID id = -1);
+        virtual ~wxBoardFrame();
 
     private:
 
-        //(*Handlers(wxBoardDialog)
+        //(*Handlers(wxBoardFrame)
         void OnQuit(wxCommandEvent& event);
         void OnAbout(wxCommandEvent& event);
         //*)
 
-        //(*Identifiers(wxBoardDialog)
-        static const wxWindowID ID_STATICTEXT1;
-        static const wxWindowID ID_BUTTON1;
-        static const wxWindowID ID_STATICLINE1;
-        static const wxWindowID ID_BUTTON2;
+        //(*Identifiers(wxBoardFrame)
+        static const wxWindowID idMenuQuit;
+        static const wxWindowID idMenuAbout;
+        static const wxWindowID ID_STATUSBAR1;
         //*)
 
-        //(*Declarations(wxBoardDialog)
-        wxBoxSizer* BoxSizer1;
-        wxBoxSizer* BoxSizer2;
-        wxButton* Button1;
-        wxButton* Button2;
-        wxStaticLine* StaticLine1;
-        wxStaticText* StaticText1;
+        //(*Declarations(wxBoardFrame)
+        wxStatusBar* StatusBar1;
         //*)
 
         DECLARE_EVENT_TABLE()
 };
 
 #endif // WXBOARDMAIN_H
+#endif // header guard
+
