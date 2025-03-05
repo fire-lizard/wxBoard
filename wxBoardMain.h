@@ -1,51 +1,58 @@
-#ifndef HEADER_4EEDF789F72450FD
-#define HEADER_4EEDF789F72450FD
-
-/***************************************************************
- * Name:      wxBoardMain.h
- * Purpose:   Defines Application Frame
- * Author:    Anatoliy Sova (anatoliysova@gmail.com)
- * Created:   2025-03-04
- * Copyright: Anatoliy Sova (firelizardsoftware.com)
- * License:
- **************************************************************/
-
 #ifndef WXBOARDMAIN_H
 #define WXBOARDMAIN_H
+
+//(*Headers(wxBoardMain)
+#include <wx/frame.h>
+#include <wx/toolbar.h>
+//*)
 
 #include <memory>
 #include <wx/grid.h>
 #include <wx/xml/xml.h>
 #include <wx/log.h>
-//(*Headers(wxBoardFrame)
-#include <wx/frame.h>
-#include <wx/menu.h>
-#include <wx/statusbr.h>
-//*)
+#include <wx/msgdlg.h>
 #include "WbEngine.h"
 
-class wxBoardFrame: public wxFrame
+class wxBoardMain: public wxFrame
 {
     public:
 
-        wxBoardFrame(wxWindow* parent,wxWindowID id = -1);
-        virtual ~wxBoardFrame();
+        wxBoardMain(wxWindow* parent,wxWindowID id=wxID_ANY);
+        virtual ~wxBoardMain();
+
+        //(*Declarations(wxBoardMain)
+        wxToolBar* ToolBar1;
+        wxToolBarToolBase* ToolBarItem10;
+        wxToolBarToolBase* ToolBarItem1;
+        wxToolBarToolBase* ToolBarItem2;
+        wxToolBarToolBase* ToolBarItem3;
+        wxToolBarToolBase* ToolBarItem4;
+        wxToolBarToolBase* ToolBarItem5;
+        wxToolBarToolBase* ToolBarItem6;
+        wxToolBarToolBase* ToolBarItem7;
+        wxToolBarToolBase* ToolBarItem8;
+        wxToolBarToolBase* ToolBarItem9;
+        //*)
+
+    protected:
+
+        //(*Identifiers(wxBoardMain)
+        static const wxWindowID ID_TOOLBARITEM1;
+        static const wxWindowID ID_TOOLBARITEM2;
+        static const wxWindowID ID_TOOLBARITEM3;
+        static const wxWindowID ID_TOOLBARITEM4;
+        static const wxWindowID ID_TOOLBARITEM5;
+        static const wxWindowID ID_TOOLBARITEM6;
+        static const wxWindowID ID_TOOLBARITEM7;
+        static const wxWindowID ID_TOOLBARITEM8;
+        static const wxWindowID ID_TOOLBARITEM9;
+        static const wxWindowID ID_TOOLBARITEM10;
+        static const wxWindowID ID_TOOLBAR1;
+        //*)
 
     private:
 
-        //(*Handlers(wxBoardFrame)
-        void OnQuit(wxCommandEvent& event);
-        void OnAbout(wxCommandEvent& event);
-        //*)
-
-        //(*Identifiers(wxBoardFrame)
-        static const wxWindowID idMenuQuit;
-        static const wxWindowID idMenuAbout;
-        static const wxWindowID ID_STATUSBAR1;
-        //*)
-
-        //(*Declarations(wxBoardFrame)
-        wxStatusBar* StatusBar1;
+        //(*Handlers(wxBoardMain)
         //*)
 
         DECLARE_EVENT_TABLE()
@@ -76,6 +83,4 @@ class wxBoardFrame: public wxFrame
         std::vector<std::tuple<wxString, GameVariant, EngineProtocol, wxString>> _engines;
 };
 
-#endif // WXBOARDMAIN_H
-#endif // header guard
-
+#endif

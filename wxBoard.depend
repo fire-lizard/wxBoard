@@ -1686,7 +1686,7 @@
 1668879827 source:d:\code\wxboard\resource.rc
 	"wx/msw/wx.rc"
 
-1741173361 source:d:\code\wxboard\wxboardapp.cpp
+1741178579 source:d:\code\wxboard\wxboardapp.cpp
 	"wxBoardApp.h"
 	"wxBoardMain.h"
 	<wx/image.h>
@@ -1694,19 +1694,20 @@
 1741089547 d:\code\wxboard\wxboardapp.h
 	<wx/app.h>
 
-1741175427 d:\code\wxboard\wxboardmain.h
+1741183732 d:\code\wxboard\wxboardmain.h
+	<wx/frame.h>
+	<wx/toolbar.h>
 	<memory>
 	<wx/grid.h>
 	<wx/xml/xml.h>
 	<wx/log.h>
-	<wx/frame.h>
-	<wx/menu.h>
-	<wx/statusbr.h>
+	<wx/msgdlg.h>
 	"WbEngine.h"
 
-1741173406 source:d:\code\wxboard\wxboardmain.cpp
+1741182654 source:d:\code\wxboard\wxboardmain.cpp
 	"wxBoardMain.h"
-	<wx/msgdlg.h>
+	<wx/bitmap.h>
+	<wx/image.h>
 	<wx/intl.h>
 	<wx/string.h>
 

@@ -1,103 +1,63 @@
-/***************************************************************
- * Name:      wxBoardMain.cpp
- * Purpose:   Code for Application Frame
- * Author:    Anatoliy Sova (anatoliysova@gmail.com)
- * Created:   2025-03-04
- * Copyright: Anatoliy Sova (firelizardsoftware.com)
- * License:
- **************************************************************/
-
 #include "wxBoardMain.h"
-#include <wx/msgdlg.h>
 
-//(*InternalHeaders(wxBoardFrame)
+//(*InternalHeaders(wxBoardMain)
+#include <wx/bitmap.h>
+#include <wx/image.h>
 #include <wx/intl.h>
 #include <wx/string.h>
 //*)
 
-//helper functions
-enum wxbuildinfoformat {
-    short_f, long_f };
-
-wxString wxbuildinfo(wxbuildinfoformat format)
-{
-    wxString wxbuild(wxVERSION_STRING);
-
-    if (format == long_f )
-    {
-#if defined(__WXMSW__)
-        wxbuild << _T("-Windows");
-#elif defined(__UNIX__)
-        wxbuild << _T("-Linux");
-#endif
-
-#if wxUSE_UNICODE
-        wxbuild << _T("-Unicode build");
-#else
-        wxbuild << _T("-ANSI build");
-#endif // wxUSE_UNICODE
-    }
-
-    return wxbuild;
-}
-
-//(*IdInit(wxBoardFrame)
-const wxWindowID wxBoardFrame::idMenuQuit = wxNewId();
-const wxWindowID wxBoardFrame::idMenuAbout = wxNewId();
-const wxWindowID wxBoardFrame::ID_STATUSBAR1 = wxNewId();
+//(*IdInit(wxBoardMain)
+const wxWindowID wxBoardMain::ID_TOOLBARITEM1 = wxNewId();
+const wxWindowID wxBoardMain::ID_TOOLBARITEM2 = wxNewId();
+const wxWindowID wxBoardMain::ID_TOOLBARITEM3 = wxNewId();
+const wxWindowID wxBoardMain::ID_TOOLBARITEM4 = wxNewId();
+const wxWindowID wxBoardMain::ID_TOOLBARITEM5 = wxNewId();
+const wxWindowID wxBoardMain::ID_TOOLBARITEM6 = wxNewId();
+const wxWindowID wxBoardMain::ID_TOOLBARITEM7 = wxNewId();
+const wxWindowID wxBoardMain::ID_TOOLBARITEM8 = wxNewId();
+const wxWindowID wxBoardMain::ID_TOOLBARITEM9 = wxNewId();
+const wxWindowID wxBoardMain::ID_TOOLBARITEM10 = wxNewId();
+const wxWindowID wxBoardMain::ID_TOOLBAR1 = wxNewId();
 //*)
 
-BEGIN_EVENT_TABLE(wxBoardFrame,wxFrame)
-    //(*EventTable(wxBoardFrame)
+BEGIN_EVENT_TABLE(wxBoardMain,wxFrame)
+    //(*EventTable(wxBoardMain)
     //*)
 END_EVENT_TABLE()
 
-wxBoardFrame::wxBoardFrame(wxWindow* parent,wxWindowID id)
+wxBoardMain::wxBoardMain(wxWindow* parent,wxWindowID id)
 {
-    //(*Initialize(wxBoardFrame)
-    wxMenu* Menu1;
-    wxMenu* Menu2;
-    wxMenuBar* MenuBar1;
-    wxMenuItem* MenuItem1;
-    wxMenuItem* MenuItem2;
-
+    //(*Initialize(wxBoardMain)
     Create(parent, id, wxEmptyString, wxDefaultPosition, wxDefaultSize, wxDEFAULT_FRAME_STYLE, _T("id"));
-    MenuBar1 = new wxMenuBar();
-    Menu1 = new wxMenu();
-    MenuItem1 = new wxMenuItem(Menu1, idMenuQuit, _("Quit\tAlt-F4"), _("Quit the application"), wxITEM_NORMAL);
-    Menu1->Append(MenuItem1);
-    MenuBar1->Append(Menu1, _("&File"));
-    Menu2 = new wxMenu();
-    MenuItem2 = new wxMenuItem(Menu2, idMenuAbout, _("About\tF1"), _("Show info about this application"), wxITEM_NORMAL);
-    Menu2->Append(MenuItem2);
-    MenuBar1->Append(Menu2, _("Help"));
-    SetMenuBar(MenuBar1);
-    StatusBar1 = new wxStatusBar(this, ID_STATUSBAR1, 0, _T("ID_STATUSBAR1"));
-    int __wxStatusBarWidths_1[1] = { -1 };
-    int __wxStatusBarStyles_1[1] = { wxSB_NORMAL };
-    StatusBar1->SetFieldsCount(1,__wxStatusBarWidths_1);
-    StatusBar1->SetStatusStyles(1,__wxStatusBarStyles_1);
-    SetStatusBar(StatusBar1);
-
-    Connect(idMenuQuit, wxEVT_COMMAND_MENU_SELECTED, (wxObjectEventFunction)&wxBoardFrame::OnQuit);
-    Connect(idMenuAbout, wxEVT_COMMAND_MENU_SELECTED, (wxObjectEventFunction)&wxBoardFrame::OnAbout);
+    ToolBar1 = new wxToolBar(this, ID_TOOLBAR1, wxDefaultPosition, wxDefaultSize, wxTB_HORIZONTAL, _T("ID_TOOLBAR1"));
+    ToolBarItem1 = ToolBar1->AddTool(ID_TOOLBARITEM1, _("New game"), wxBitmap(wxImage(_T("D:\\Code\\wxBoard\\images\\toolbar\\New.png"))), wxNullBitmap, wxITEM_NORMAL, _("New game"), wxEmptyString);
+    ToolBarItem2 = ToolBar1->AddTool(ID_TOOLBARITEM2, _("Open"), wxBitmap(wxImage(_T("D:\\Code\\wxBoard\\images\\toolbar\\Open.png"))), wxNullBitmap, wxITEM_NORMAL, _("Open"), wxEmptyString);
+    ToolBarItem3 = ToolBar1->AddTool(ID_TOOLBARITEM3, _("Save"), wxBitmap(wxImage(_T("D:\\Code\\wxBoard\\images\\toolbar\\Save.png"))), wxNullBitmap, wxITEM_NORMAL, _("Save"), wxEmptyString);
+    ToolBarItem4 = ToolBar1->AddTool(ID_TOOLBARITEM4, _("Stop game"), wxBitmap(wxImage(_T("D:\\Code\\wxBoard\\images\\toolbar\\Stop.png"))), wxNullBitmap, wxITEM_NORMAL, _("Stop game"), wxEmptyString);
+    ToolBar1->AddSeparator();
+    ToolBarItem5 = ToolBar1->AddTool(ID_TOOLBARITEM5, _("Editor mode"), wxBitmap(wxImage(_T("D:\\Code\\wxBoard\\images\\toolbar\\Place.png"))), wxNullBitmap, wxITEM_NORMAL, _("Editor mode"), wxEmptyString);
+    ToolBarItem6 = ToolBar1->AddTool(ID_TOOLBARITEM6, _("Clear board"), wxBitmap(wxImage(_T("D:\\Code\\wxBoard\\images\\toolbar\\Clear.png"))), wxNullBitmap, wxITEM_NORMAL, _("Clear board"), wxEmptyString);
+    ToolBar1->AddSeparator();
+    ToolBarItem7 = ToolBar1->AddTool(ID_TOOLBARITEM7, _("Settings"), wxBitmap(wxImage(_T("D:\\Code\\wxBoard\\images\\toolbar\\Settings.png"))), wxNullBitmap, wxITEM_NORMAL, _("Settings"), wxEmptyString);
+    ToolBarItem8 = ToolBar1->AddTool(ID_TOOLBARITEM8, _("Engine Manager"), wxBitmap(wxImage(_T("D:\\Code\\wxBoard\\images\\toolbar\\Table.png"))), wxNullBitmap, wxITEM_NORMAL, _("Engine Manager"), wxEmptyString);
+    ToolBar1->AddSeparator();
+    ToolBarItem9 = ToolBar1->AddTool(ID_TOOLBARITEM9, _("About"), wxBitmap(wxImage(_T("D:\\Code\\wxBoard\\images\\toolbar\\About.png"))), wxNullBitmap, wxITEM_NORMAL, _("About"), wxEmptyString);
+    ToolBarItem10 = ToolBar1->AddTool(ID_TOOLBARITEM10, _("Exit"), wxBitmap(wxImage(_T("D:\\Code\\wxBoard\\images\\toolbar\\Exit.png"))), wxNullBitmap, wxITEM_NORMAL, _("Exit"), wxEmptyString);
+    ToolBar1->Realize();
+    SetToolBar(ToolBar1);
     //*)
 }
 
-wxBoardFrame::~wxBoardFrame()
+wxBoardMain::~wxBoardMain()
 {
-    //(*Destroy(wxBoardFrame)
+    //(*Destroy(wxBoardMain)
     //*)
-}
-
-void wxBoardFrame::OnQuit(wxCommandEvent& event)
-{
 	StopEngine(_whiteEngine);
 	StopEngine(_blackEngine);
-    Close();
 }
 
-void wxBoardFrame::StartNewGame(GameVariant newGameVariant) const
+void wxBoardMain::StartNewGame(GameVariant newGameVariant) const
 {
 	StopEngine(_whiteEngine);
 	StopEngine(_blackEngine);
@@ -110,7 +70,7 @@ void wxBoardFrame::StartNewGame(GameVariant newGameVariant) const
 	//this->ui->vboard->repaint();
 }
 
-void wxBoardFrame::LoadEngine(const std::shared_ptr<Engine>& engine, const wxString& engineExe, PieceColour player)
+void wxBoardMain::LoadEngine(const std::shared_ptr<Engine>& engine, const wxString& engineExe, PieceColour player)
 {
 	if (engine != nullptr)
 	{
@@ -197,7 +157,7 @@ void wxBoardFrame::LoadEngine(const std::shared_ptr<Engine>& engine, const wxStr
 	}
 }
 
-void wxBoardFrame::OnAbout(wxCommandEvent& event)
+/*void wxBoardMain::OnAbout(wxCommandEvent& event)
 {
 	wxString msg;
 	msg.Append("wxBoard 0.9.8 beta\n");
@@ -208,9 +168,9 @@ void wxBoardFrame::OnAbout(wxCommandEvent& event)
 	msg.Append("Shogi Variants Kanji graphics by Shigeki Watanabe\n");
 	msg.Append("Fire Lizard Software 2025");
     wxMessageBox(msg);
-}
+}*/
 
-void wxBoardFrame::StopEngine(std::shared_ptr<Engine> engine)
+void wxBoardMain::StopEngine(std::shared_ptr<Engine> engine)
 {
 	if (engine)
 	{
@@ -220,7 +180,7 @@ void wxBoardFrame::StopEngine(std::shared_ptr<Engine> engine)
 	}
 }
 
-void wxBoardFrame::readXmlUsingStream(const wxString& fileName, wxGrid* engineTable)
+void wxBoardMain::readXmlUsingStream(const wxString& fileName, wxGrid* engineTable)
 {
     // Attempt to load the file into a wxXmlDocument
     wxXmlDocument doc;
@@ -267,7 +227,7 @@ void wxBoardFrame::readXmlUsingStream(const wxString& fileName, wxGrid* engineTa
     }
 }
 
-void wxBoardFrame::createXmlFromTable(const wxString& fileName, const wxGrid* engineTable)
+void wxBoardMain::createXmlFromTable(const wxString& fileName, const wxGrid* engineTable)
 {
     // We'll create an in-memory XML document, then write it to temp.xml
     wxXmlDocument doc;

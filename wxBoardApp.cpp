@@ -23,7 +23,7 @@ bool wxBoardApp::OnInit()
     wxInitAllImageHandlers();
     if ( wxsOK )
     {
-        wxBoardFrame* Frame = new wxBoardFrame(0);
+        wxBoardMain* Frame = new wxBoardMain(0);
         Frame->Show();
         SetTopWindow(Frame);
     }

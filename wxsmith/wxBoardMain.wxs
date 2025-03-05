@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxFrame" name="wxBoardMain">
+		<object class="wxToolBar" name="ID_TOOLBAR1" variable="ToolBar1" member="yes">
+			<object class="tool" name="ID_TOOLBARITEM1" variable="ToolBarItem1" member="yes">
+				<label>New game</label>
+				<bitmap>D:\Code\wxBoard\images\toolbar\New.png</bitmap>
+				<tooltip>New game</tooltip>
+			</object>
+			<object class="tool" name="ID_TOOLBARITEM2" variable="ToolBarItem2" member="yes">
+				<label>Open</label>
+				<bitmap>D:\Code\wxBoard\images\toolbar\Open.png</bitmap>
+				<tooltip>Open</tooltip>
+			</object>
+			<object class="tool" name="ID_TOOLBARITEM3" variable="ToolBarItem3" member="yes">
+				<label>Save</label>
+				<bitmap>D:\Code\wxBoard\images\toolbar\Save.png</bitmap>
+				<tooltip>Save</tooltip>
+			</object>
+			<object class="tool" name="ID_TOOLBARITEM4" variable="ToolBarItem4" member="yes">
+				<label>Stop game</label>
+				<bitmap>D:\Code\wxBoard\images\toolbar\Stop.png</bitmap>
+				<tooltip>Stop game</tooltip>
+			</object>
+			<object class="separator" />
+			<object class="tool" name="ID_TOOLBARITEM5" variable="ToolBarItem5" member="yes">
+				<label>Editor mode</label>
+				<bitmap>D:\Code\wxBoard\images\toolbar\Place.png</bitmap>
+				<tooltip>Editor mode</tooltip>
+			</object>
+			<object class="tool" name="ID_TOOLBARITEM6" variable="ToolBarItem6" member="yes">
+				<label>Clear board</label>
+				<bitmap>D:\Code\wxBoard\images\toolbar\Clear.png</bitmap>
+				<tooltip>Clear board</tooltip>
+			</object>
+			<object class="separator" />
+			<object class="tool" name="ID_TOOLBARITEM7" variable="ToolBarItem7" member="yes">
+				<label>Settings</label>
+				<bitmap>D:\Code\wxBoard\images\toolbar\Settings.png</bitmap>
+				<tooltip>Settings</tooltip>
+			</object>
+			<object class="tool" name="ID_TOOLBARITEM8" variable="ToolBarItem8" member="yes">
+				<label>Engine Manager</label>
+				<bitmap>D:\Code\wxBoard\images\toolbar\Table.png</bitmap>
+				<tooltip>Engine Manager</tooltip>
+			</object>
+			<object class="separator" />
+			<object class="tool" name="ID_TOOLBARITEM9" variable="ToolBarItem9" member="yes">
+				<label>About</label>
+				<bitmap>D:\Code\wxBoard\images\toolbar\About.png</bitmap>
+				<tooltip>About</tooltip>
+			</object>
+			<object class="tool" name="ID_TOOLBARITEM10" variable="ToolBarItem10" member="yes">
+				<label>Exit</label>
+				<bitmap>D:\Code\wxBoard\images\toolbar\Exit.png</bitmap>
+				<tooltip>Exit</tooltip>
+			</object>
+		</object>
+	</object>
+</wxsmith>
