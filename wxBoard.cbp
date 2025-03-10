@@ -136,6 +136,8 @@
 		<Unit filename="UciEngine.h" />
 		<Unit filename="UsiEngine.cpp" />
 		<Unit filename="UsiEngine.h" />
+		<Unit filename="VBoard.cpp" />
+		<Unit filename="VBoard.h" />
 		<Unit filename="WaShogiBoard.cpp" />
 		<Unit filename="WaShogiBoard.h" />
 		<Unit filename="WaShogiPiece.cpp" />
@@ -158,6 +160,7 @@
 		<Unit filename="wxsmith/NewGameDialog.wxs" />
 		<Unit filename="wxsmith/PromotionDialog.wxs" />
 		<Unit filename="wxsmith/SettingsDialog.wxs" />
+		<Unit filename="wxsmith/VBoard.wxs" />
 		<Unit filename="wxsmith/wxBoardMain.wxs" />
 		<Extensions>
 			<wxsmith version="1">
@@ -169,6 +172,7 @@
 					<wxDialog wxs="wxsmith/SettingsDialog.wxs" src="SettingsDialog.cpp" hdr="SettingsDialog.h" fwddecl="0" i18n="1" name="SettingsDialog" language="CPP" />
 					<wxDialog wxs="wxsmith/AddEngineDialog.wxs" src="AddEngineDialog.cpp" hdr="AddEngineDialog.h" fwddecl="0" i18n="1" name="AddEngineDialog" language="CPP" />
 					<wxDialog wxs="wxsmith/PromotionDialog.wxs" src="PromotionDialog.cpp" hdr="PromotionDialog.h" fwddecl="0" i18n="1" name="PromotionDialog" language="CPP" />
+					<wxPanel wxs="wxsmith/VBoard.wxs" src="VBoard.cpp" hdr="VBoard.h" fwddecl="0" i18n="1" name="VBoard" language="CPP" />
 				</resources>
 			</wxsmith>
 		</Extensions>
