@@ -1694,7 +1694,7 @@
 1741089547 d:\code\wxboard\wxboardapp.h
 	<wx/app.h>
 
-1741207513 d:\code\wxboard\wxboardmain.h
+1741292911 d:\code\wxboard\wxboardmain.h
 	<wx/frame.h>
 	<wx/statusbr.h>
 	<wx/toolbar.h>
@@ -1716,7 +1716,7 @@
 	"EngineManager.h"
 	"SettingsDialog.h"
 
-1741206505 source:d:\code\wxboard\wxboardmain.cpp
+1741293512 source:d:\code\wxboard\wxboardmain.cpp
 	"wxBoardMain.h"
 	<wx/bitmap.h>
 	<wx/image.h>
@@ -2578,4 +2578,12 @@
 1741207434 d:\code\wxboard\settingsdialog.h
 	<wx/dialog.h>
 	<wx/combobox.h>
+
+1741633974 source:d:\code\wxboard\addenginedialog.cpp
+	"AddEngineDialog.h"
+	<wx/intl.h>
+	<wx/string.h>
+
+1741634304 d:\code\wxboard\addenginedialog.h
+	<wx/dialog.h>
 
