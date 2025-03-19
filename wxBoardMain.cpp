@@ -210,7 +210,7 @@ void wxBoardMain::LoadEngine(const std::shared_ptr<Engine>& engine, const wxStri
 			}
 		}
 		else
-			wxMessageBox("Error while running engine");
+			wxMessageBox("Error while running engine", "Error", wxOK | wxICON_ERROR, this);
 	}
 }
 
@@ -224,12 +224,12 @@ void wxBoardMain::OnAbout(wxCommandEvent& event)
 	msg.Append("Maka Dai Dai Shogi Kanji graphics by Joe Henbethydd\n");
 	msg.Append("Shogi Variants Kanji graphics by Shigeki Watanabe\n");
 	msg.Append("Fire Lizard Software 2025");
-    wxMessageBox(msg);
+    wxMessageBox(msg, "About", wxOK | wxICON_INFORMATION, this);
 }
 
 void wxBoardMain::OnClearBoard(wxCommandEvent& event)
 {
-	int response = wxMessageBox("Are you sure you want to clear the board?", "Warning", wxYES_NO | wxICON_QUESTION, this);
+	int response = wxMessageBox("Are you sure you want to clear the board?", "Warning", wxYES_NO | wxICON_WARNING, this);
 	if (response == wxYES)
 	{
 		StopEngine(_whiteEngine);
