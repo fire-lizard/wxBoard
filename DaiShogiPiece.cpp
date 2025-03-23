@@ -49,6 +49,30 @@ std::string DaiShogiPiece::StringCode()
 		return "Z";
 	case Knight:
 		return "Y";
+	case WaterBuffalo:
+		return "W!";
+	case Gold:
+		switch (_basePieceType)
+		{
+		case Iron:
+			return "+J";
+		case Stone:
+			return "+U";
+		case AngryBoar:
+			return "+A'";
+		case ViolentOx:
+			return "+V'";
+		case FlyingDragon:
+			return "+F'";
+		case EvilWolf:
+			return "+W";
+		case CatSword:
+			return "+Z";
+		case Knight:
+			return "+Y";
+		default:
+			return "G";
+		}
 	default:
 		return ChuShogiPiece::StringCode();
 	}
@@ -64,7 +88,17 @@ PieceType DaiShogiPiece::FromStringCode(const std::string& code)
 		{"F'", FlyingDragon},
 		{"W", EvilWolf},
 		{"Z", CatSword},
-		{"Y", Knight}
+		{"Y", Knight},
+		{"W!", WaterBuffalo},
+		{"+J", Iron},
+		{"+U", Stone},
+		{"+A'", AngryBoar},
+		{"+V'", ViolentOx},
+		{"+F'", FlyingDragon},
+		{"+W", EvilWolf},
+		{"+Z", CatSword},
+		{"+Y", Knight},
+		{"+W!", WaterBuffalo}
 	};
 
 	const auto it = codeToPieceType.find(code);

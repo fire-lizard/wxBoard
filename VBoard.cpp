@@ -39,7 +39,7 @@ void VBoard::FinishMove()
 		_whiteMoves.push_back(_board->GetFEN());
 		if (!_board->HasPiece(King, Black) && !_board->HasPiece(Prince, Black))
 		{
-			wxMessageBox("White wins by elminating Black King", "Game over");
+			wxMessageBox("White wins by eliminating Black King", "Game over");
 		}
 	}
 	else
@@ -47,7 +47,7 @@ void VBoard::FinishMove()
 		_blackMoves.push_back(_board->GetFEN());
 		if (!_board->HasPiece(King, White) && !_board->HasPiece(Prince, White))
 		{
-			wxMessageBox("Black wins by elminating White King", "Game over");
+			wxMessageBox("Black wins by eliminating White King", "Game over");
 		}
 	}
 	_currentPlayer = _currentPlayer == White ? Black : White;
