@@ -217,7 +217,7 @@ void wxBoardMain::LoadEngine(const std::shared_ptr<Engine>& engine, const wxStri
 void wxBoardMain::OnAbout(wxCommandEvent& event)
 {
 	wxString msg;
-	msg.Append("wxBoard 0.9.8 beta\n");
+	msg.Append("wxBoard 0.9.9 beta\n");
 	msg.Append("Programming by Anatoliy Sova\n");
 	msg.Append("Wa Shogi Mnemonic graphics by Ilya V. Novikov\n");
 	msg.Append("Ko Shogi graphics by TKR101010 (from Deviantart)\n");

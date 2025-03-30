@@ -1716,7 +1716,7 @@
 	"EngineManager.h"
 	"SettingsDialog.h"
 
-1742118379 source:d:\code\wxboard\wxboardmain.cpp
+1742759561 source:d:\code\wxboard\wxboardmain.cpp
 	"wxBoardMain.h"
 	<wx/bitmap.h>
 	<wx/image.h>
@@ -1738,7 +1738,7 @@
 	<string>
 	"Common.h"
 
-1742408349 d:\code\wxboard\common.h
+1742929578 d:\code\wxboard\common.h
 
 1738793378 source:d:\code\wxboard\chessboard.cpp
 	"ChessBoard.h"
@@ -1785,7 +1785,7 @@
 1740604786 d:\code\wxboard\kanjipiece.h
 	"Piece.h"
 
-1742500636 source:d:\code\wxboard\chushogipiece.cpp
+1742549716 source:d:\code\wxboard\chushogipiece.cpp
 
 1740992297 source:d:\code\wxboard\daidaishogiboard.cpp
 	"DaiDaiShogiBoard.h"
@@ -1821,12 +1821,12 @@
 	"DaiDaiShogiBoard.h"
 	"MakaDaiDaiShogiPiece.h"
 
-1740992867 source:d:\code\wxboard\daidaishogipiece.cpp
+1742731168 source:d:\code\wxboard\daidaishogipiece.cpp
 
 1742409849 source:d:\code\wxboard\daishogiboard.cpp
 	"DaiShogiBoard.h"
 
-1740992363 source:d:\code\wxboard\daishogipiece.cpp
+1742728078 source:d:\code\wxboard\daishogipiece.cpp
 
 1736601092 source:d:\code\wxboard\judkinshogiboard.cpp
 	"JudkinShogiBoard.h"
@@ -1853,26 +1853,24 @@
 1736163039 source:d:\code\wxboard\kanjipiece.cpp
 	"KanjiPiece.h"
 
-1742419970 source:d:\code\wxboard\koshogiboard.cpp
+1743353143 source:d:\code\wxboard\koshogiboard.cpp
 	"KoShogiBoard.h"
 
-1742582113 d:\code\wxboard\koshogiboard.h
-	<queue>
-	<set>
+1743353892 d:\code\wxboard\koshogiboard.h
 	"Common.h"
-	"TenjikuShogiBoard.h"
 	"KoShogiPiece.h"
+	"EngineOutputHandler.h"
 
 1740652221 d:\code\wxboard\koshogipiece.h
 	"Common.h"
 	"DaiShogiPiece.h"
 
-1740997375 source:d:\code\wxboard\koshogipiece.cpp
+1742840921 source:d:\code\wxboard\koshogipiece.cpp
 
 1740707462 source:d:\code\wxboard\makadaidaishogiboard.cpp
 	"MakaDaiDaiShogiBoard.h"
 
-1740856286 source:d:\code\wxboard\makadaidaishogipiece.cpp
+1742725262 source:d:\code\wxboard\makadaidaishogipiece.cpp
 
 1738792948 source:d:\code\wxboard\makrukboard.cpp
 	"MakrukBoard.h"
@@ -1898,7 +1896,7 @@
 	"ShogiBoard.h"
 	"ShogiPiece.h"
 
-1740822568 source:d:\code\wxboard\piece.cpp
+1742562901 source:d:\code\wxboard\piece.cpp
 
 1738792958 source:d:\code\wxboard\shatranjboard.cpp
 	"ShatranjBoard.h"
@@ -1929,7 +1927,7 @@
 	"Common.h"
 	"DaiShogiPiece.h"
 
-1740845737 source:d:\code\wxboard\tenjikushogipiece.cpp
+1742728309 source:d:\code\wxboard\tenjikushogipiece.cpp
 
 1741009930 source:d:\code\wxboard\washogiboard.cpp
 	"WaShogiBoard.h"
@@ -1944,7 +1942,7 @@
 	"Common.h"
 	"KanjiPiece.h"
 
-1740871829 source:d:\code\wxboard\washogipiece.cpp
+1742552482 source:d:\code\wxboard\washogipiece.cpp
 
 1740540938 source:d:\code\wxboard\xiangqiboard.cpp
 	"XiangqiBoard.h"
@@ -2146,10 +2144,10 @@
 	"Engine.h"
 	"Board.h"
 
-1742500353 source:d:\code\wxboard\engineoutputhandler.cpp
+1742852104 source:d:\code\wxboard\engineoutputhandler.cpp
 	"EngineOutputHandler.h"
 
-1741118796 d:\code\wxboard\engineoutputhandler.h
+1742848756 d:\code\wxboard\engineoutputhandler.h
 	<wx/regex.h>
 	"Common.h"
 	"WbEngine.h"
@@ -2604,7 +2602,7 @@
 	<wx/intl.h>
 	<wx/string.h>
 
-1742118321 d:\code\wxboard\vboard.h
+1742765764 d:\code\wxboard\vboard.h
 	<wx/panel.h>
 	<memory>
 	<wx/statusbr.h>

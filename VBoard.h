@@ -77,9 +77,9 @@ class VBoard: public wxPanel
         int _px = -1;
         int _py = -1;
         std::vector<std::pair<int, int>> _moves;
+        std::vector<std::pair<int, int>> _shoots;
         std::vector<std::pair<int, int>> _attackers;
         std::vector<std::pair<int, int>> _defenders;
-        std::vector<std::tuple<int, int, int, int>> _opponentMoves;
         std::vector<std::string> _whiteMoves;
         std::vector<std::string> _blackMoves;
         wxStatusBar *_statusBar;
@@ -101,6 +101,8 @@ class VBoard: public wxPanel
         bool _editorMode = false;
         bool _lionMovedOnce = false;
         bool _lionMovedTwice = false;
+        bool _pieceShotOnce = false;
+        std::pair<int, int> _firstShoot = { -1, -1 };
         std::pair<int, int> _lionFirstMove = { -1, -1 };
         std::pair<int, int> _lionSecondMove = { -1, -1 };
 };

@@ -47,7 +47,9 @@ bool EngineOutputHandler::IsLionMove(const Piece* piece, int x1, int y1, int x2,
 			}
 		}
 		else if (piece->GetType() == Lion || piece->GetType() == LionDog || piece->GetType() == FuriousFiend || piece->GetType() == Thunderclap ||
-           piece->GetType() == RoamingAssault)
+            piece->GetType() == KnightCaptain || piece->GetType() == ExtensiveFog || piece->GetType() == HolyLight ||
+			piece->GetType() == WingedHorse || piece->GetType() == DoubleKylin || piece->GetType() == DoublePhoenix ||
+			piece->GetType() == RoamingAssault)
 		{
 			return true;
 		}
@@ -106,6 +108,26 @@ std::pair<int, int> EngineOutputHandler::GetPieceLocation(const Board* board, Pi
 			break;
 	}
 	return { kx, ky };
+}
+
+std::vector<std::pair<int, int>> EngineOutputHandler::GetPieceLocations(const Board* board, PieceType pieceType, PieceColour pieceColour)
+{
+	int kx = -1, ky = -1;
+	std::vector<std::pair<int, int>> result;
+	for (int i = 0; i < board->GetWidth(); i++)
+	{
+		for (int j = 0; j < board->GetHeight(); j++)
+		{
+			const Piece* p = board->GetData(i, j);
+			if (p != nullptr && p->GetBaseType() == pieceType && p->GetColour() == pieceColour)
+			{
+				kx = i;
+				ky = j;
+				result.emplace_back(kx, ky);
+			}
+		}
+	}
+	return result;
 }
 
 std::array<char, 5> EngineOutputHandler::ExtractMove(const wxString& buf, EngineProtocol engineProtocol, GameVariant gameVariant)

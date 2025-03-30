@@ -53,17 +53,17 @@ void VBoard::FinishMove()
 	_currentPlayer = _currentPlayer == White ? Black : White;
 	_statusBar->SetForegroundColour(*wxBLACK);
 	_statusBar->SetStatusText(_currentPlayer == White ? _gameVariant == Xiangqi ? "Red move" : "White move" : "Black move");
-	_opponentMoves = _board->GetAllMoves(_currentPlayer == White ? Black : White);
 	_currentPiece = nullptr;
 	_oldX = -1;
 	_oldY = -1;
 	_moves.clear();
+	_shoots.clear();
 	_lionMovedOnce = false;
 	_lionMovedTwice = false;
-	_lionFirstMove.first = -1;
-	_lionFirstMove.second = -1;
-	_lionSecondMove.first = -1;
-	_lionSecondMove.second = -1;
+	_pieceShotOnce = false;
+	_lionFirstMove = { -1, -1 };
+	_lionSecondMove = { -1, -1 };
+	_firstShoot = { -1, -1 };
 	this->Refresh();
 }
 
@@ -71,10 +71,8 @@ void VBoard::CancelLionMove()
 {
 	_lionMovedOnce = false;
 	_lionMovedTwice = false;
-	_lionFirstMove.first = -1;
-	_lionFirstMove.second = -1;
-	_lionSecondMove.first = -1;
-	_lionSecondMove.second = -1;
+	_lionFirstMove = { -1, -1 };
+	_lionSecondMove = { -1, -1 };
 }
 
 Board* VBoard::GetBoard() const
@@ -101,7 +99,6 @@ void VBoard::SetGameVariant(GameVariant gameVariant)
 	}
 	_currentPiece = nullptr;
 	_moves.clear();
-	_opponentMoves.clear();
 	_attackers.clear();
 	_defenders.clear();
 	_gameVariant = gameVariant;
@@ -202,7 +199,7 @@ PieceColour VBoard::GetCurrentPlayer() const
 void VBoard::SetCurrentPlayer(PieceColour currentPlayer)
 {
 	_moves.clear();
-	_opponentMoves.clear();
+	_shoots.clear();
 	_currentPlayer = currentPlayer;
 }
 
