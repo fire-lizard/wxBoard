@@ -1723,11 +1723,11 @@
 	<wx/intl.h>
 	<wx/string.h>
 
-1741006174 source:d:\code\wxboard\board.cpp
+1743670386 source:d:\code\wxboard\board.cpp
 	"Board.h"
 	<utility>
 
-1740540938 d:\code\wxboard\board.h
+1743707645 d:\code\wxboard\board.h
 	<vector>
 	<algorithm>
 	<utility>
@@ -1853,10 +1853,10 @@
 1736163039 source:d:\code\wxboard\kanjipiece.cpp
 	"KanjiPiece.h"
 
-1743353143 source:d:\code\wxboard\koshogiboard.cpp
+1743706423 source:d:\code\wxboard\koshogiboard.cpp
 	"KoShogiBoard.h"
 
-1743353892 d:\code\wxboard\koshogiboard.h
+1743706686 d:\code\wxboard\koshogiboard.h
 	"Common.h"
 	"KoShogiPiece.h"
 	"EngineOutputHandler.h"
@@ -2597,12 +2597,12 @@
 1741634510 d:\code\wxboard\promotiondialog.h
 	<wx/dialog.h>
 
-1742420876 source:d:\code\wxboard\vboard.cpp
+1743619530 source:d:\code\wxboard\vboard.cpp
 	"VBoard.h"
 	<wx/intl.h>
 	<wx/string.h>
 
-1742765764 d:\code\wxboard\vboard.h
+1743619503 d:\code\wxboard\vboard.h
 	<wx/panel.h>
 	<memory>
 	<wx/statusbr.h>
@@ -2618,4 +2618,5 @@
 	"WaShogiBoard.h"
 	"MakrukBoard.h"
 	"WbEngine.h"
+	"PromotionDialog.h"
 
