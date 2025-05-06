@@ -1694,7 +1694,7 @@
 1741089547 d:\code\wxboard\wxboardapp.h
 	<wx/app.h>
 
-1741292911 d:\code\wxboard\wxboardmain.h
+1746034262 d:\code\wxboard\wxboardmain.h
 	<wx/frame.h>
 	<wx/statusbr.h>
 	<wx/toolbar.h>
@@ -1710,6 +1710,7 @@
 	"QianhongEngine.h"
 	"UsiEngine.h"
 	"ChessBoard.h"
+	"WaShogiBoard.h"
 	"EngineOutputHandler.h"
 	"IniFile.h"
 	"NewGameDialog.h"
@@ -1723,11 +1724,11 @@
 	<wx/intl.h>
 	<wx/string.h>
 
-1743670386 source:d:\code\wxboard\board.cpp
+1744583124 source:d:\code\wxboard\board.cpp
 	"Board.h"
 	<utility>
 
-1743707645 d:\code\wxboard\board.h
+1744582549 d:\code\wxboard\board.h
 	<vector>
 	<algorithm>
 	<utility>
@@ -1766,7 +1767,7 @@
 1736449213 source:d:\code\wxboard\chesspiece.cpp
 	"ChessPiece.h"
 
-1740999217 source:d:\code\wxboard\chushogiboard.cpp
+1744582611 source:d:\code\wxboard\chushogiboard.cpp
 	"ChuShogiBoard.h"
 
 1740791304 d:\code\wxboard\chushogiboard.h
@@ -1795,7 +1796,7 @@
 	"MakaDaiDaiShogiBoard.h"
 	"DaiDaiShogiPiece.h"
 
-1740751856 d:\code\wxboard\makadaidaishogiboard.h
+1743523073 d:\code\wxboard\makadaidaishogiboard.h
 	<set>
 	"Common.h"
 	"DaiShogiBoard.h"
@@ -1853,10 +1854,10 @@
 1736163039 source:d:\code\wxboard\kanjipiece.cpp
 	"KanjiPiece.h"
 
-1743706423 source:d:\code\wxboard\koshogiboard.cpp
+1743806049 source:d:\code\wxboard\koshogiboard.cpp
 	"KoShogiBoard.h"
 
-1743706686 d:\code\wxboard\koshogiboard.h
+1743806323 d:\code\wxboard\koshogiboard.h
 	"Common.h"
 	"KoShogiPiece.h"
 	"EngineOutputHandler.h"
@@ -1867,7 +1868,7 @@
 
 1742840921 source:d:\code\wxboard\koshogipiece.cpp
 
-1740707462 source:d:\code\wxboard\makadaidaishogiboard.cpp
+1744582760 source:d:\code\wxboard\makadaidaishogiboard.cpp
 	"MakaDaiDaiShogiBoard.h"
 
 1742725262 source:d:\code\wxboard\makadaidaishogipiece.cpp
@@ -1932,7 +1933,7 @@
 1741009930 source:d:\code\wxboard\washogiboard.cpp
 	"WaShogiBoard.h"
 
-1740872235 d:\code\wxboard\washogiboard.h
+1746035581 d:\code\wxboard\washogiboard.h
 	"Common.h"
 	"ShogiBoard.h"
 	"WaShogiPiece.h"
@@ -1958,9 +1959,8 @@
 
 1740605095 source:d:\code\wxboard\xiangqipiece.cpp
 
-1741109095 source:d:\code\wxboard\engine.cpp
+1744539409 source:d:\code\wxboard\engine.cpp
 	"Engine.h"
-	<utility>
 
 1741108679 d:\code\wxboard\engine.h
 	<wx/process.h>
@@ -2597,12 +2597,12 @@
 1741634510 d:\code\wxboard\promotiondialog.h
 	<wx/dialog.h>
 
-1743619530 source:d:\code\wxboard\vboard.cpp
+1743714367 source:d:\code\wxboard\vboard.cpp
 	"VBoard.h"
 	<wx/intl.h>
 	<wx/string.h>
 
-1743619503 d:\code\wxboard\vboard.h
+1743714364 d:\code\wxboard\vboard.h
 	<wx/panel.h>
 	<memory>
 	<wx/statusbr.h>

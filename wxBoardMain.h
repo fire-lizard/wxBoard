@@ -19,6 +19,7 @@
 #include "QianhongEngine.h"
 #include "UsiEngine.h"
 #include "ChessBoard.h"
+#include "WaShogiBoard.h"
 #include "EngineOutputHandler.h"
 #include "IniFile.h"
 #include "NewGameDialog.h"

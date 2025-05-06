@@ -217,7 +217,7 @@ void wxBoardMain::LoadEngine(const std::shared_ptr<Engine>& engine, const wxStri
 void wxBoardMain::OnAbout(wxCommandEvent& event)
 {
 	wxString msg;
-	msg.Append("wxBoard 0.9.9 beta\n");
+	msg.Append("wxBoard 0.9.9.1 beta\n");
 	msg.Append("Programming by Anatoliy Sova\n");
 	msg.Append("Wa Shogi Mnemonic graphics by Ilya V. Novikov\n");
 	msg.Append("Ko Shogi graphics by TKR101010 (from Deviantart)\n");
@@ -666,7 +666,8 @@ void wxBoardMain::OnSave(wxCommandEvent& event)
         wxString wildcard;
         if (gameVariant == CrazyWa || gameVariant == WaShogi)
         {
-            wildcard = "FEN Files (*.fen)|*.fen";
+            wildcard = "FEN Files (*.fen)|*.fen|"
+                       "PSN Files (*.psn)|*.psn";
         }
         else
         {
@@ -778,10 +779,12 @@ void wxBoardMain::OnSave(wxCommandEvent& event)
             }
             else if (filterIndex == 1)
             {
-                // PSN
+                // PSN or PGN
                 wxString senteName = "[Sente \"" + _whiteEngineName + "\"]\n";
                 wxString goteName  = "[Gote \"" + _blackEngineName + "\"]\n\n";
-                wxString psn       = wxString::FromUTF8(dynamic_cast<ShogiBoard*>(board)->GetPSN());
+                wxString psn       = gameVariant != WaShogi && gameVariant != CrazyWa ?
+                                     wxString::FromUTF8(dynamic_cast<ShogiBoard*>(board)->GetPSN()) :
+                                     wxString::FromUTF8(dynamic_cast<WaShogiBoard*>(board)->GetPGN());
                 str << senteName << goteName << psn;
             }
 
